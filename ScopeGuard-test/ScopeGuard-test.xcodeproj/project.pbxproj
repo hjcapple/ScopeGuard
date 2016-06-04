@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E37AB131D03944800B05246 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E37AB121D03944800B05246 /* main.cpp */; };
+		2E37AB1B1D0394A000B05246 /* TestObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E37AB191D0394A000B05246 /* TestObjc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E37AB0D1D03944800B05246 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E37AB0F1D03944800B05246 /* ScopeGuard-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ScopeGuard-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E37AB121D03944800B05246 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2E37AB191D0394A000B05246 /* TestObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjc.m; sourceTree = "<group>"; };
+		2E37AB1A1D0394A000B05246 /* TestObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjc.h; sourceTree = "<group>"; };
+		2E37AB1D1D0394B100B05246 /* CFScopeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFScopeRelease.h; sourceTree = "<group>"; };
+		2E37AB1E1D0394B100B05246 /* ScopeGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScopeGuard.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E37AB0C1D03944800B05246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E37AB061D03944800B05246 = {
+			isa = PBXGroup;
+			children = (
+				2E37AB1C1D0394B100B05246 /* src */,
+				2E37AB111D03944800B05246 /* ScopeGuard-test */,
+				2E37AB101D03944800B05246 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E37AB101D03944800B05246 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E37AB0F1D03944800B05246 /* ScopeGuard-test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E37AB111D03944800B05246 /* ScopeGuard-test */ = {
+			isa = PBXGroup;
+			children = (
+				2E37AB121D03944800B05246 /* main.cpp */,
+				2E37AB191D0394A000B05246 /* TestObjc.m */,
+				2E37AB1A1D0394A000B05246 /* TestObjc.h */,
+			);
+			path = "ScopeGuard-test";
+			sourceTree = "<group>";
+		};
+		2E37AB1C1D0394B100B05246 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2E37AB1D1D0394B100B05246 /* CFScopeRelease.h */,
+				2E37AB1E1D0394B100B05246 /* ScopeGuard.h */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E37AB0E1D03944800B05246 /* ScopeGuard-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E37AB161D03944800B05246 /* Build configuration list for PBXNativeTarget "ScopeGuard-test" */;
+			buildPhases = (
+				2E37AB0B1D03944800B05246 /* Sources */,
+				2E37AB0C1D03944800B05246 /* Frameworks */,
+				2E37AB0D1D03944800B05246 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ScopeGuard-test";
+			productName = "ScopeGuard-test";
+			productReference = 2E37AB0F1D03944800B05246 /* ScopeGuard-test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E37AB071D03944800B05246 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HJC;
+				TargetAttributes = {
+					2E37AB0E1D03944800B05246 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2E37AB0A1D03944800B05246 /* Build configuration list for PBXProject "ScopeGuard-test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E37AB061D03944800B05246;
+			productRefGroup = 2E37AB101D03944800B05246 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E37AB0E1D03944800B05246 /* ScopeGuard-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E37AB0B1D03944800B05246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E37AB131D03944800B05246 /* main.cpp in Sources */,
+				2E37AB1B1D0394A000B05246 /* TestObjc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2E37AB141D03944800B05246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2E37AB151D03944800B05246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2E37AB171D03944800B05246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E37AB181D03944800B05246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E37AB0A1D03944800B05246 /* Build configuration list for PBXProject "ScopeGuard-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E37AB141D03944800B05246 /* Debug */,
+				2E37AB151D03944800B05246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E37AB161D03944800B05246 /* Build configuration list for PBXNativeTarget "ScopeGuard-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E37AB171D03944800B05246 /* Debug */,
+				2E37AB181D03944800B05246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E37AB071D03944800B05246 /* Project object */;
+}
