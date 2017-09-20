@@ -38,3 +38,4 @@ CG_EXTERN void test_objc()
     CGContextRef context = CreateBitmapRGBA8Context(bytes, width, height);
     CF_SCOPE_RELEASE(context);
 }
+

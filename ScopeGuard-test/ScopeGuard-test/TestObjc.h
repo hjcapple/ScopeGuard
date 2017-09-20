@@ -11,6 +11,6 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 
-CG_EXTERN void test_objc();
+CG_EXTERN void test_objc(void);
 
 #endif

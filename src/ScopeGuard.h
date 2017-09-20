@@ -1,7 +1,7 @@
 /*
  The MIT License (MIT)
 
- Copyright (c) 2016 HJC hjcapple@gmail.com
+ Copyright (c) 2017 HJC hjcapple@gmail.com
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -91,7 +91,7 @@ namespace clover
 #else
 
 // ScopeGuard for Objective-C
-typedef void (^ext_cleanupBlock_t)();
+typedef void (^ext_cleanupBlock_t)(void);
 static inline void ext_executeCleanupBlock(__strong ext_cleanupBlock_t* block)
 {
     (*block)();
@@ -104,3 +104,4 @@ static inline void ext_executeCleanupBlock(__strong ext_cleanupBlock_t* block)
 #endif
 
 #endif /* __SCOPE_GUARD_H__ */
+
