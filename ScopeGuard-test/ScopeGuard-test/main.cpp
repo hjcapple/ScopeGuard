@@ -10,19 +10,15 @@
 #include "TestObjc.h"
 #include <iostream>
 
-static void test_cpp()
-{
-    void* p = malloc(1000);
-    ON_SCOPE_EXIT
-    {
+static void test_cpp() {
+    void *p = malloc(1000);
+    ON_SCOPE_EXIT {
         free(p);
     };
 }
 
-int main(int argc, const char* argv[])
-{
-    for (;;)
-    {
+int main(int argc, const char *argv[]) {
+    for (;;) {
         test_cpp();
         test_objc();
     }

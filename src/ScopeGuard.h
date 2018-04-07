@@ -1,7 +1,7 @@
 /*
  The MIT License (MIT)
 
- Copyright (c) 2017 HJC hjcapple@gmail.com
+ Copyright (c) 2018 HJC hjcapple@gmail.com
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -33,35 +33,28 @@
 #include <type_traits>
 
 // ScopeGuard for C++11
-namespace clover
-{
+namespace clover {
     template <typename Fun>
-    class ScopeGuard
-    {
+    class ScopeGuard {
     public:
-        ScopeGuard(Fun&& f) : _fun(std::forward<Fun>(f)), _active(true)
-        {
+        ScopeGuard(Fun &&f) : _fun(std::forward<Fun>(f)), _active(true) {
         }
 
-        ~ScopeGuard()
-        {
-            if (_active)
-            {
+        ~ScopeGuard() {
+            if (_active) {
                 _fun();
             }
         }
 
-        void dismiss()
-        {
+        void dismiss() {
             _active = false;
         }
 
         ScopeGuard() = delete;
-        ScopeGuard(const ScopeGuard&) = delete;
-        ScopeGuard& operator=(const ScopeGuard&) = delete;
+        ScopeGuard(const ScopeGuard &) = delete;
+        ScopeGuard &operator=(const ScopeGuard &) = delete;
 
-        ScopeGuard(ScopeGuard&& rhs) : _fun(std::move(rhs._fun)), _active(rhs._active)
-        {
+        ScopeGuard(ScopeGuard &&rhs) : _fun(std::move(rhs._fun)), _active(rhs._active) {
             rhs.dismiss();
         }
 
@@ -70,19 +63,15 @@ namespace clover
         bool _active;
     };
 
-    namespace detail
-    {
-        enum class ScopeGuardOnExit
-        {
-        };
+    namespace detail {
+        enum class ScopeGuardOnExit {};
 
         template <typename Fun>
-        inline ScopeGuard<Fun> operator+(ScopeGuardOnExit, Fun&& fn)
-        {
+        inline ScopeGuard<Fun> operator+(ScopeGuardOnExit, Fun &&fn) {
             return ScopeGuard<Fun>(std::forward<Fun>(fn));
         }
-    }
-}
+    } // namespace detail
+} // namespace clover
 
 // Helper macro
 #define ON_SCOPE_EXIT \
@@ -92,8 +81,7 @@ namespace clover
 
 // ScopeGuard for Objective-C
 typedef void (^ext_cleanupBlock_t)(void);
-static inline void ext_executeCleanupBlock(__strong ext_cleanupBlock_t* block)
-{
+static inline void ext_executeCleanupBlock(__strong ext_cleanupBlock_t *block) {
     (*block)();
 }
 
@@ -104,4 +92,3 @@ static inline void ext_executeCleanupBlock(__strong ext_cleanupBlock_t* block)
 #endif
 
 #endif /* __SCOPE_GUARD_H__ */
-

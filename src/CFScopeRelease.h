@@ -1,7 +1,7 @@
 /*
  The MIT License (MIT)
 
- Copyright (c) 2017 HJC hjcapple@gmail.com
+ Copyright (c) 2018 HJC hjcapple@gmail.com
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -30,24 +30,19 @@
 #define __CF_SCOPE_CONCATENATE_IMPL(s1, s2) s1##s2
 #define __CF_SCOPE_CONCATENATE(s1, s2) __CF_SCOPE_CONCATENATE_IMPL(s1, s2)
 
-static inline void CF_SafeRelease(CFTypeRef ref)
-{
-    if (ref)
-    {
+static inline void CF_SafeRelease(CFTypeRef ref) {
+    if (ref) {
         CFRelease(ref);
     }
 }
 
-static inline void CF_SafeRetain(CFTypeRef ref)
-{
-    if (ref)
-    {
+static inline void CF_SafeRetain(CFTypeRef ref) {
+    if (ref) {
         CFRetain(ref);
     }
 }
 
-inline static void CF_ExecuteCleanup(CFTypeRef* pref)
-{
+inline static void CF_ExecuteCleanup(CFTypeRef *pref) {
     CF_SafeRelease(*pref);
 }
 
